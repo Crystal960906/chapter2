@@ -49,7 +49,7 @@ ul,ol,li > a {
 
 #header_wrap > .a ul li a {
     text-decoration: none;
-    color: inherit;
+    color: #38214a;
 }
 
 #header_wrap > .a ul li:hover {
