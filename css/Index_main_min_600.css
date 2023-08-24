@@ -1,0 +1,837 @@
+@charset "utf-8";
+@media (min-width:600px) {
+* {margin:0; box-sizing: border-box;}
+
+/*==================전체 wap==================*/
+#wrap {
+    width:100%;
+    height: auto;
+    background-color: #f8e7e5;;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/*==================햄버거 메뉴==================*/
+.hamburger_menu {
+    display: none;
+}
+
+/*==================슬라이드==================*/
+#slider {
+    width:90%;
+    height: 800px;
+    margin: 20px;
+    background-color: gold;
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+    background-image: url(../img/slider_1.jpg);
+    background-position: center center;
+}
+#slider > img {
+    width:100%;
+    height: 100%;
+}
+/*슬라이드 텍스트*/
+#slider > .textbox {
+    position: absolute;
+    top:40%;
+    left:50%;
+    width:100%;
+    transform: translate(-50%, -10%);
+    text-align: center;
+}
+
+#slider > .textbox > h1 {
+    font-size: 100px;
+    color: #fff;
+    font-weight: 700;
+}
+
+#slider > .textbox > p {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+/*==================뮤직 플레이==================*/
+#grid {
+    position: relative;
+    width: 90%;
+}
+
+#play_wrap {
+    width:100%;
+    height: 200px;
+    background-color: transparent;
+    display: block;
+    z-index: 1;
+    position: absolute;
+    bottom: -70px;
+}
+/*상단 레코드*/
+#play_wrap > .recordbox {
+    width:126px;
+    height: 126px;
+    background-color: transparent;
+    position: relative;
+    display: inline-block;
+    left:350px;
+    bottom: 10px;
+    z-index: 1;
+    box-shadow: rgba(135,121,119,0) 2px 4px 21px 0;
+    
+}
+
+#play_wrap > .recordbox > img {
+    -webkit-mask-image: url(../img/record-mask.svg);
+    mask-size: cover;
+    width: 100%;
+}
+
+#play_wrap > .recordbox > img {
+    animation: rotate_image 17s linear infinite;transform-origin: 50% 50%;
+}
+@keyframes rotate_image{
+100% {
+transform: rotate(360deg);
+}
+}
+
+/*뮤직 플레이 박스*/
+#play_wrap > .playbox {
+    width: 100%;
+    height: 150px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 37px 45px 39px;
+    display: flex;
+    box-shadow: 2px 7px 17.82px 0.18px rgba(228,155,148,.2);
+    z-index:0;
+    position: relative;
+    margin: -50px 0 0 0;
+    flex-wrap: wrap;
+}
+
+.playbox >.box1 {
+    width:100%;
+    height: 30px;
+    position: relative;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    top:7px;
+    background-color: transparent;
+}
+
+.playbox >.box1 > h4 {
+    color: #38214a;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-color:#c2c0c0;
+    cursor: pointer;
+}
+
+.playbox >.box2 {
+    width:100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+
+} 
+
+.playbox >.box2 > .bar {
+    width:40%;
+    height: 3px;
+    margin-right: 15px;
+    height: 3px;
+    position: relative;
+    background-color: #8b8395;
+    cursor: pointer
+}
+
+.playbox >.box2 > .time {
+    width:95px;
+    height: 25px;
+    color: #8b8395;
+    display: flex;
+    align-items: center;
+} 
+
+.playbox >.box2 > .playbutton {
+    width: 116px;
+    height: 28px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer
+}
+
+.playbox >.box2 > .playbutton > img {
+    width:20px;
+    height: 20px;
+    margin: 0 10px;
+}
+
+
+
+.playbox >.box2 > .sound > img {
+    width:20px;
+    height: 20px;
+    margin: 5px 0 0 0;
+    cursor: pointer
+}
+
+
+/*==================Our Discography==================*/
+/*글씨*/
+#article_title {
+        width:100%; 
+        height:150px; 
+        background-color: transparent; 
+        text-align: center;
+        margin: 150px 0 0 0;
+}
+
+#article_title > h1 {
+    font-size:44px; 
+    color:#38214a;
+    font-weight: 700;
+}
+
+#article_title > p {
+    font-size:16px; 
+    color:#38214a; 
+    text-align: center; 
+    margin:15px; 
+    line-height: 23px;
+}
+
+
+/*==================Our Discography==================*/
+/*앨범커버 이미지박스*/
+#article_wrap {
+    width:100%; 
+    height:auto; 
+    background-color: transparent;
+    display: flex; 
+    align-content:space-between;
+    flex-wrap: wrap; 
+    justify-content: space-between;}
+
+#article_wrap > article {
+    width:326px; 
+    height:400px; 
+    background-color:transparent;}
+
+#article_wrap > article > .photo {
+    width:326px; 
+    height:80%;}
+
+#article_wrap > article > .photo > img {
+    width:100%; 
+    height:100%;
+    border-radius: 7px;}
+
+#article_wrap > article > .text {
+    color:#38214a; 
+    text-align: center; 
+    margin:20px 0;}
+
+#article_wrap > article > .text > h4 {
+    font-size: 18px; 
+    font-weight: 600;}
+
+#article_wrap > article > .text > span {
+    font-size: 14px; 
+    line-height: 30px;}
+    
+#article_wrap > .down {
+    margin:100px 0;}
+
+/*Our Discigraphy (사진 위아래 흔들리는 효과)*/
+#article_wrap > article:hover > .photo {
+    animation: motion 0.5s linear 0s infinite alternate;
+    margin-top: 0;
+    cursor: pointer;
+}
+    
+@keyframes motion {
+        0% {margin-top: 0px;}
+        100% {margin-top: 10px;}
+}
+
+/*==================View More 버튼==================*/
+#viewemore_buttton {
+    width:100%; 
+    height: 200px; 
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#viewemore_buttton > button {
+    width:230px; 
+    height: 60px; 
+    background-color: white;
+    border: 1px ;
+    border-radius: 26px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    opacity: 0.8;
+    cursor: pointer;}
+
+#viewemore_buttton > button > span {
+    font-size: 15px;
+    color:#38214a;
+    font-weight: bold;}
+
+/*==================upcoming==================*/
+/*핑크 물결 웨이브 배경*/
+#upcoming {
+    display: flex; 
+    justify-content: center; 
+    flex-wrap:wrap;
+    background-image: url(../img/h1-bck-img-01.png); 
+    background-position: bottom center; 
+    background-size: cover;}
+
+/*뒷 배경 글씨*/
+#upcoming  {
+    width:100%;
+    height:800px;
+}
+
+#upcoming > .wrap {
+    width:1200px;
+    height:400px;
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#upcoming >.wrap > .text {
+    width:100%;;
+    height:200px;
+    background-color:transparent;
+    display: flex;
+    justify-content: center;
+}
+
+#upcoming >.wrap > .text > span {
+    font-size: 100px;
+    font-weight: 900;
+    color:#F5DBD7;
+    opacity: 0.6;
+    position: relative;
+    z-index: 0;
+}
+
+/*타이머 박스*/
+.timer {
+    width:100%; 
+    height:250px; 
+    background-color: white; 
+    position: relative;
+    bottom: 20px;
+    border-radius: 5px;
+    opacity: 0.8;
+    display: flex; 
+    justify-content: center;
+    position: relative;
+    z-index: 1}
+
+.timer_box {
+    width:150px; 
+    height:220px; 
+    margin:10px;
+    display: flex; 
+    align-items: center; 
+    flex-direction: column;
+    justify-content: center;
+    color:#38214a ;
+    opacity: 1;}
+
+.timer_box > h1 {
+    font-size: 50px;
+    font-weight: 700}
+    
+.timer_box > p {
+    font-size: 15px; 
+    position: relative;
+    font-weight: 500}
+
+
+/*==================artists==================*/
+/*글씨*/
+#artists  {
+    width:100%; 
+    height:150px; 
+    background-color: transparent; 
+    text-align: center;
+    margin: 150px 0 0 0;
+}
+
+#artists > h1 {
+    font-size:44px; 
+    color:#38214a;
+    font-weight: 700;
+}
+
+#artists > p {
+    font-size:16px; 
+    color:#38214a; 
+    text-align: center; 
+    margin:15px; 
+    line-height: 23px;
+}
+
+/*아티스트 얼굴*/
+.artists_photo {
+    width:100%; 
+    height: auto; 
+    background-color: transparent;
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    flex-wrap:wrap;}
+
+.artists_photo > .imgbox {
+    width:300px; height:300px;
+    background-color: transparent;
+    margin: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;}
+
+.artists_photo> .imgbox > img {
+width: 100%;
+mask-image: url("../img/2203520_circle_dot_record_round_icon.png");
+-webkit-mask-image: url("../img/2203520_circle_dot_record_round_icon.png");
+mask-size:100%;
+-webkit-mask-size: 100%;}
+
+.artists_photo> .imgbox_big {
+    width:300px; height:300px; 
+    background-color: transparent;
+    margin: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;}
+
+.artists_photo > .imgbox_big > img {width: 100%;
+mask-image: url(../img/2203520_circle_dot_record_round_icon.png);
+-webkit-mask-image: url(../img/2203520_circle_dot_record_round_icon.png);
+mask-size:100%;
+-webkit-mask-size: 100%;}
+
+.artists_photo > .imgbox_big >.textbox {
+    font-size: 18px;
+    font-weight: 600;
+    position:absolute; top:30px; 
+    color:#fff;
+    position:absolute;
+    opacity:0;
+    padding: 50px;}
+
+
+/*아티스트 사진 hover시 텍스트*/
+.artists_photo> .imgbox >.textbox {
+    font-size: 16px;
+    font-weight: 600;
+    position:absolute; top:30px; 
+    color:#fff;
+    position:absolute;
+    opacity:0;
+    padding: 30px;
+    text-align: center; line-height: 20px;}
+
+.artists_photo> .imgbox >.textbox:hover{
+    opacity: 1;
+    cursor: pointer;}
+
+.artists_photo> .imgbox_big >.textbox:hover{
+    opacity: 1;
+    cursor: pointer;}
+
+/*==================tour==================*/
+/*글씨*/
+#tour {
+    width:100%; 
+    height:150px; 
+    background-color: transparent; 
+    text-align: center;
+    margin: 150px 0 0 0;
+}
+
+#tour> h1 {
+    font-size:44px; 
+    color:#38214a;
+    font-weight: 700;
+}
+
+#tour > p {
+    font-size:16px; 
+    color:#38214a; 
+    text-align: center; 
+    margin:15px; 
+    line-height: 23px;
+}
+
+
+/*==================tour==================*/
+/*테이블 표 */
+
+.tour_table {
+    width:800px; 
+    height:700px; 
+    background-color: #fff; 
+    opacity: 0.8; 
+    padding:40px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 20px #c2c0c0;}    
+
+.tour_table > table  tr {
+    font-size: 17px;
+    color: #38214a;}
+
+.tour_table > table  tr td {
+    padding: 10px;}
+
+.tour_table > table  tr td > h4 {
+    font-size: 18px;
+    font-weight: 700;}
+
+.tour_table > table  tr td > h4:hover {
+    color:#9f7cca; 
+    cursor:pointer;}
+
+.tour_table > table  tr td > span {
+    font-size: 14px;}
+
+.tour_table > table  tr td > button {
+    padding: 13px; 
+    width: 140px;
+    border-radius: 20px;
+    border: 1px solid transparent; 
+    box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.1); 
+    float: right;}
+
+.tour_table > table  tr td > button > span {
+    font-size: 14px; 
+    color: #38214a; 
+    font-weight: 700;}
+
+.tour_table > table  tr td > button > span:hover {
+    color:#9f7cca; 
+    cursor:pointer;}
+
+/*==================Photo_Grid==================*/
+/*wrap*/
+#Photo_Grid {
+    width:100%; 
+    height: auto; 
+    background-color: transparent;
+    display: flex;
+    justify-content: space-around;
+    margin: 130px 0 0 0;
+    }
+
+/*Photo Grid(왼쪽)*/
+    #Photo_Grid > .left {
+        width:49%;
+        height:800px;
+        background-color: transparent;
+        display:flex; 
+        justify-content:
+        space-between; flex-wrap: wrap;}
+
+    #Photo_Grid > .left > .photo1{
+        width:49%; height:49%;
+        background-color: transparent;
+        border-radius: 5px;
+        display: flex;
+        position: relative;
+        opacity: 1;
+        cursor: pointer;
+    }
+/*Photo Grid-hover text box(왼쪽)*/
+    #Photo_Grid > .left > .photo1 > .textbox {
+        width:100%; height:100%;
+        position: absolute;
+        opacity: 0;
+        transition: 0.5s;
+        background-color: rgb(0, 0, 0, 0.5);
+        color:#fff;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;}
+
+    #Photo_Grid > .left > .photo1:hover > .textbox {
+        opacity: 1;}
+
+/*Photo Grid-hover text(왼쪽)*/
+    #Photo_Grid > .left > .photo1 > .textbox > h4 {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;}
+
+    #Photo_Grid > .left > .photo1 > .textbox > p {
+        width: 100%;
+        text-align: center;
+        font-size: 13px;
+        margin:10px 0;}
+
+
+    #Photo_Grid > .left > .photo3{
+        width:100%; height:49%;
+        background-color: transparent;
+        border-radius: 5px;}  
+
+
+/*Photo Grid-image(왼쪽)*/
+    #Photo_Grid > .left .photo1 > img  {width:100%;height: 100%; border-radius: 5px;}
+    #Photo_Grid > .left .photo3 > img  {width:100%;height: 100%; border-radius: 5px;}
+
+
+/*========================이제부터 오른쪽=================================*/
+    #Photo_Grid > .right {
+        width:50%;height:800px;
+        background-color: transparent;
+        display:flex; justify-content: space-between; flex-wrap: wrap;}
+
+    #Photo_Grid > .right > .photo1{
+        width:49%; height:50%;
+        background-color: transparent;
+        border-radius: 5px;
+        display: flex;
+        position: relative;
+        opacity: 1;
+        cursor: pointer;}
+
+    #Photo_Grid > .right > .photo3{
+        width:100%; height:49%;
+        background-color: transparent;
+        border-radius: 5px;}  
+
+/*Photo Grid-hover text box(오른쪽)*/
+    #Photo_Grid > .right > .photo1 > .textbox {
+        width:100%; height:100%;
+        position: absolute;
+        opacity: 0;
+        transition: 0.5s;
+        background-color: rgb(0, 0, 0, 0.5);
+        color:#fff;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;}
+
+    #Photo_Grid > .right > .photo1:hover > .textbox {opacity: 1;}
+/*Photo Grid-hover text(오른쪽)*/
+    #Photo_Grid > .left > .photo1 > .textbox > h4 {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;}
+
+    #Photo_Grid > .right > .photo1 > .textbox > p {
+        width: 100%;
+        text-align: center;
+        font-size: 13px;
+        margin:10px 0;}
+
+/*Photo Grid-image(오른쪽)*/
+    #Photo_Grid > .right .photo1 > img  {width:100%;height: 100%; border-radius: 5px;}
+    #Photo_Grid > .right .photo3 > img  {width:100%;height: 100%; border-radius: 5px;}
+
+
+
+
+/*==================shortplay==================*/
+    /*shortplay Box (전체박스)*/
+    #shortplay_wrap {
+        width:100%; height:600px;
+        margin:150px 0;
+        display: flex;
+        justify-content: center;
+        background-image: url(../img/h1-bck-img-01.png);
+        font-family: 'Poppins', sans-serif;}
+
+/*shortplay Box (왼쪽 플레이박스)*/
+    #shortplay_wrap > .play_list {
+        width:400px; height: 700px;
+        background-color: white;
+        border-radius: 5px;
+        margin: 15px}
+
+    .play_list > .play_top {
+        width: 400px; height:25%;
+        background-color: transparent;
+        margin:15px 0;
+        background-image: url(../img/background.jpg);
+        position: relative;}
+
+        
+        .play_list > .play_under {
+            width: 400px; height:65%;
+            background-color: white;
+        opacity: 0.9;}
+            
+/*shortplay Box (왼쪽 플레이박스_top)*/
+            .play_top > .album {
+            width: 128px; height:128px;
+            background-color: transparent;
+            position: absolute;
+            left:25px;
+            bottom:25px;
+        }
+        .play_top > .album > img {width:100%; height:100%; }
+        .play_top > .album > img {
+            -webkit-mask-image: url(../img/record-mask.svg);
+            mask-size: cover;
+        }
+        .play_top > .album > img {
+            animation: rotate_image 17s linear infinite;transform-origin: 50% 50%;
+        }
+        @keyframes rotate_image{
+        100% {
+        transform: rotate(360deg);
+        }
+}
+        .play_top > .text {
+            position:absolute;
+            background-color: transparent;
+            text-align: left;
+            margin:50px 0 0 180px;
+        }
+        .play_top > .text > h4 {
+            font-size: 18px; color:#fff;
+        }
+        .play_top > .text > p {
+            font-size: 15px; color:#fff; margin:4px 0;
+        }
+
+        .play_under > table {margin: 20px 0 0 5px;}
+
+        .play_under > table tr {
+            height: 65px;
+            }
+
+        .play_under > table tr td h4 {
+            font-weight: 600; 
+            color: #38214a;
+            cursor: pointer;}
+
+        .play_under > table tr td h4:hover{
+            color: #5d516c;}
+
+        .play_under > table tr td p {
+            line-height: 25px; 
+            margin: 0 0 0 10px; 
+            font-size: 14px;
+            color: #5d516c;}
+
+        .play_under > table .second {position: relative;}
+
+        .play_under > table td .iconbox span {
+            font-size: 14px;
+            color: #5d516c;}
+        
+        .play_under > table td .iconbox {
+            background-color: transparent;
+            width:120px;
+            height: 30px;
+            position: absolute;
+            left: 15px;
+            top: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+        .play_under > table td .iconbox .iconimg {
+            width:25px;
+            height:25px;
+            margin: 0 2px 0 0;
+            cursor: pointer;
+        }
+
+        .play_under > table td .iconbox .iconimg > img {
+            width: 100%;
+            height: 100%;
+        }
+/*review Box*/
+
+
+    #shortplay_wrap > .review {
+        width:400px; height: 700px;
+        background-color: transparent;
+        display: flex;
+        margin: 15px 0 0 0; 
+        border-radius: 5px;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-around;
+        font-family: 'Poppins', sans-serif;
+    }
+
+
+    .reviewbox {
+        width:400px; height: 230px;
+        margin:30px 0 0 0;
+        background-color: transparent;
+    }
+    .reviewbox > .text > h4 {
+        color: #38214a;
+        font-size: 18px;
+        font-weight: 700;
+        margin: 30px 0 0 0;
+    }
+
+    .reviewbox > .text > h3 {
+        font-size: 20px;
+        margin:10px 0;
+        color: #5d516c;
+    }
+
+    .reviewbox > .text > p{
+        font-size: 15px;
+        color: #5d516c;
+        line-height: 20px;
+    }
+
+    .face_name{
+        width: 400px;
+        height: 60px;
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+    }
+
+    .face_name > .face {
+        width:50px;
+        height: 50px;
+        background-color: transparent;
+    } 
+    .face_name > .face > img {
+        width:100%; height: 100%;
+    }
+    .face_name > span {
+        font-size: 14px;
+        margin:0 0 0 20px;
+        color: #5d516c;
+        }
+}

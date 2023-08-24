@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeoBeat</title>
+    <link href="css/reset.css" rel="stylesheet">
+
+    <link href="css/Index_common_max_599px.css" rel="stylesheet">
+    <link href="css/Index_common_min_600px.css" rel="stylesheet">
+    <link href="css/Index_common_min_1260px.css" rel="stylesheet">
+
+    <link href="css/Index_main_max_599.css" rel="stylesheet">
+    <link href="css/Index_main_min_600.css" rel="stylesheet">
+    <link href="css/Index_main_min_1260.css" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,400&display=swap"
+    rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <script>
+    $(function(){
+        $(".hamburger_menu").click(function(){
+        $(".a").slideToggle();
+        });
+    });
+
+    $(window).resize(function(){
+    if(window.innerWidth>=599){
+        $('.a').show();
+        }
+    });
+
+    $(window).resize(function(){
+    if(window.innerWidth<=599){
+        $('.a').hide();
+        }
+    });
+
+
+    </script>
+
+
+
+
+</head>
+<body>
+    <div id="wrap">
+
+        <header id="header_wrap">
+            <img src="img/Logo.png" alt="Logo" class="logo">
+            <nav class="a">
+                <ul>
+                    <li><a href="Sub_index.html">Pages</a></li>
+                    <li><a href="Sub_index.html">Discography</a></li>
+                    <li><a href="Sub_index.html">Home</a></li>
+                    <li><a href="Sub_index.html">Event</a></li>
+                    <li><a href="Sub_index.html">Blog</a></li>
+                    <li><a href="Sub_index.html">Shop</a></li>
+                </ul>
+            </nav>
+            <img src="" alt="" class="b">
+            <div class="widget">
+                <img src="img/compass.png" alt="">
+                <img src="img/soundcloud-logotype.png" alt="">
+                <img src="img/youtube.png" alt="">
+                <img src="img/menu.png" alt="">
+            </div>
+            <div class="hamburger_menu">
+                <img src="img/menu-dots.png">
+            </div>
+        </header>
+
+        <div id="slider">
+            <div class="textbox">
+                <h1>New Album</h1>
+                <p>Welcome to NeoBeat, Your new website and<br>
+                    place where your tunes comes first
+                </p>
+            </div>
+        </div>
+        
+        <div id="grid">
+            <div id="play_wrap">
+                <div class="recordbox">
+                    <img src="img/aricle_photo_4.jpg" alt="레코드모양">                   
+                </div>
+
+                <div class="playbox">
+                    <div class="box1">
+                        <a href="Sub_index.html"><h4>Shadows Yharnam</h4></a>
+                    </div>
+                    <div class="box2">
+                        <div class="bar"></div>
+                        <div class="time"><span>00:00/00:18</span></div>
+                        <div class="playbutton">
+                            <img src="img/previous1.png" alt="뒤로감기">
+                            <img src="img/play-button.png" alt="재생">
+                            <img src="img/previous2.png" alt="앞으로감기">
+                        </div>
+                        <div class="sound">
+                            <img src="img/volume.png" alt="볼륨">
+                            <div class="bar">
+                                <div class="bar_inside"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box3">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="article_title">
+            <h1>Our Discography</h1>
+            <p>Lorem Ipsum ts toshhoop svetsgin. Proin gravida nibn lorem<br>
+                quis bibendum aucto</p>
+        </div>
+
+        <div id="article_wrap">
+            <article>
+                <div class="photo">
+                    <img src="img/aricle_photo_1.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h4>Melody</h4>
+                    <span>Every Cloud</span>
+                </div>
+            </article>
+            <article class="down">
+                <div class="photo">
+                    <img src="img/aricle_photo_2.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h4>Where Are You Now</h4>
+                    <span>Lost Frequencies</span>
+                </div>
+            </article>
+            <article>
+                <div class="photo">
+                    <img src="img/aricle_photo_3.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h4>Crazy What Love Can Do</h4>
+                    <span>David Guetta</span>
+                </div>
+            </article>
+            <article>
+                <div class="photo">
+                    <img src="img/aricle_photo_4.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h4>0800 HEAVEN</h4>
+                    <span>Nathan Dawe</span>
+                </div>
+            </article>
+            <article class="down">
+                <div class="photo">
+                    <img src="img/aricle_photo_6.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h4>Cruel Summer</h4>
+                    <span>Taylor Swift</span>
+                </div>
+            </article>
+            <article>
+                <div class="photo">
+                    <img src="img/aricle_photo_5.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h4>21 Rreasons(Feat.Ella Henderson)</h4>
+                    <span>Nathan Dawe</span>
+                </div>
+            </article>
+        </div>
+
+        <div id="viewemore_buttton">
+            <button><span>View more</span></button>
+        </div>
+
+        <div id="upcoming">
+            <div class="wrap">
+                <div class="text">
+                    <span>upcoming</span>
+                </div>
+
+                <div class="timer">
+                    <div class="timer_box">
+                        <h1>202</h1>
+                        <p>Days</p>
+                    </div>
+    
+                    <div class="timer_box">
+                        <h1>07</h1>
+                        <p>Hours</p>
+                    </div>
+    
+                    <div class="timer_box">
+                        <h1>56</h1>
+                        <p>Minutes</p>
+                    </div>
+    
+                    <div class="timer_box">
+                        <h1>11</h1>
+                        <p>Seconds</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="artists">
+            <h1>Artists You May Like</h1>
+            <p>Lorem Ipsum rhis ts toshhoop svetsgin. Proin gravida nibh lorem quis bibendum aucto</p>
+        </div>
+
+
+        <div class="artists_photo">
+            <div class="imgbox">
+                <img src="img/aricle_photo_1.jpg">
+                <div class="textbox">
+                    <h4>justin bieber</h4>
+                </div>
+            </div>
+
+            <div class="imgbox">
+                <img src="../img/circle_cover_2.jpg" alt="">
+                <div class="textbox">
+                    <h4>Pia Mia</h4>
+                </div>
+            </div>
+
+            <div class="imgbox">
+                <img src="img/circle_cover_3.jpg" alt="">
+                <div class="textbox">
+                    <h4>Husen sara</h4>
+                </div>
+            </div>
+
+            <div class="imgbox_big">
+                <img src="img/circle_cover_4.jpg" alt="">
+                <div class="textbox">
+                    <h4>Nicki Minaj</h4>
+                </div>
+            </div>
+
+            <div class="imgbox">
+                <img src="img/circle_cover_5.jpg" alt="">
+                <div class="textbox">
+                    <h4>Selena<br>Gomez</h4>
+                </div>
+            </div>
+
+            <div class="imgbox">
+                <img src="img/circle_cover_6.jpg" alt="">
+                <div class="textbox">
+                    <h4>Ariana<br>Grande</h4>
+                </div>
+            </div>
+
+            <div class="imgbox">
+                <img src="img/main-album.jpg" alt="">
+                <div class="textbox">
+                    <h4>Doa Lipa</h4>
+                </div>
+            </div>
+        </div>
+
+        <div id="tour">
+            <h1>Upcoming Tour</h1>
+            <p>Lorem Ipsum rhis ts toshhoop svetsgin. Proin gravida nibh lorem quis bibendum aucto</p>
+        </div>
+
+        <div class="tour_table">
+            <table>
+                <colgroup>
+                    <col style="width: 15%">
+                    <col style="width: 50%">
+                    <col style="width: 15%">
+                </colgroup>
+                <tr>
+                    <td>
+                        <h4>29 May</h4>
+                    </td>
+                    <td>
+                        <h4>West Palm Beach</h4><span>Miami, Florida</span>
+                    </td>
+                    <td><button><span>Buy Ticket</span></button></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <h4>29 May</h4>
+                    </td>
+                    <td>
+                        <h4>Suels Academy</h4><span>Brussels, Belgium</span>
+                    </td>
+                    <td><button><span>Buy Ticket</span></button></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <h4>29 May</h4>
+                    </td>
+                    <td>
+                        <h4>Europe Tour</h4><span>Colosseum, Italy</span>
+                    </td>
+                    <td><button><span>Buy Ticket</span></button></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <h4>29 May</h4>
+                    </td>
+                    <td>
+                        <h4>City Auditorium</h4><span>Okayama, Japan</span>
+                    </td>
+                    <td><button><span>Buy Ticket</span></button></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <h4>29 May</h4>
+                    </td>
+                    <td>
+                        <h4>Artcsape Theatre</h4><span>Paris, France</span>
+                    </td>
+                    <td><button><span>Buy Ticket</span></button></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <h4>29 May</h4>
+                    </td>
+                    <td>
+                        <h4>Fellows Mansion</h4><span>Copenhagen, Denmark</span>
+                    </td>
+                    <td><button><span>Buy Ticket</span></button></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <h4>29 May</h4>
+                    </td>
+                    <td>
+                        <h4>Brasil Tour</h4><span>Colosseum, Italy</span>
+                    </td>
+                    <td><button><span>Buy Ticket</span></button></td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="Photo_Grid">
+            <div class="left">
+                <div class="photo1">
+                    <img src="img/Photo_Grid_2.jfif" alt="">
+                    <div class="textbox">
+                        <h4>Sunrise Moment</h4>
+                        <p>Shape Of Dreams</p>
+                    </div>
+                </div>
+                <div class="photo1">
+                    <img src="img/Photo_Grid_1.jfif" alt="">
+                    <div class="textbox">
+                        <h4>river of you</h4>
+                        <p>Nazaha</p>
+                    </div>
+                </div>
+                <div class="photo3">
+                    <img src="img/Photo_Grid_3.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="right">
+                <div class="photo3">
+                    <img src="img/photo_Grid_4.png" alt="">
+                </div>
+                <div class="photo1">
+                    <img src="img/photo_Grid_5.jfif" alt="">
+                    <div class="textbox">
+                        <h4>VODKA</h4>
+                        <p>Sless Praismo</p>
+                    </div>
+                </div>
+                <div class="photo1">
+                    <img src="img/photo_Grid_6.jfif" alt="">
+                    <div class="textbox">
+                        <h4>Atmosphere</h4>
+                        <p>Shape Of Dreams</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="shortplay_wrap">
+
+            <div class="play_list">
+                <div class="play_top">
+                    <div class="album">
+                        <img src="img/katy.jfif" alt="">
+                    </div>
+                    <div class="text">
+                        <h4>One Of The Boys</h4>
+                        <p>Katy Perry</p>
+                    </div>
+                </div>
+                <div class="play_under">
+                    <table>
+                        <colgroup>
+                            <col style="width: 240px">
+                            <col style="width: 150px">
+                        </colgroup>
+
+                        <tr>
+                            <td>
+                                <h4>1. One Of the Boys</h4>
+                                <p>Katy Perry</p>
+                            </td>
+                            <td class="second">
+                                <div class="iconbox">
+                                    <span>3:14</span>
+                                    <div class="iconimg">
+                                        <img src="img/download-file.png" alt="">
+                                    </div>
+                                    <div class="iconimg">
+                                        <img src="img/play.png">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <h4>2. Waking Up In Vegas</h4>
+                                <p>Katy Perry</p>
+                            </td>
+                            <td class="second">
+                                <div class="iconbox">
+                                    <span>4:07</span>
+                                    <div class="iconimg">
+                                        <img src="img/download-file.png" alt="">
+                                    </div>
+                                    <div class="iconimg">
+                                        <img src="img/play.png">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <h4>3. Thinking Of You</h4>
+                                <p>Katy Perry</p>
+                            </td>
+                            <td class="second">
+                                <div class="iconbox">
+                                    <span>3:20</span>
+                                    <div class="iconimg">
+                                        <img src="img/download-file.png" alt="">
+                                    </div>
+                                    <div class="iconimg">
+                                        <img src="img/play.png">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <h4>4. Mannequin</h4>
+                                <p>Katy Perry</p>
+                            </td>
+                            <td class="second">
+                                <div class="iconbox">
+                                    <span>3:57</span>
+                                    <div class="iconimg">
+                                        <img src="img/download-file.png" alt="">
+                                    </div>
+                                    <div class="iconimg">
+                                        <img src="img/play.png">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <h4>5. Hot and Cold</h4>
+                                <p>Katy Perry</p>
+                            </td>
+                            <td class="second">
+                                <div class="iconbox">
+                                    <span>3:11</span>
+                                    <div class="iconimg">
+                                        <img src="img/download-file.png" alt="">
+                                    </div>
+                                    <div class="iconimg">
+                                        <img src="img/play.png">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <h4>7. Finger Prints</h4>
+                                <p>Katy Perry</p>
+                            </td>
+                            <td class="second">
+                                <div class="iconbox">
+                                    <span>3:44</span>
+                                    <div class="iconimg">
+                                        <img src="img/download-file.png" alt="">
+                                    </div>
+                                    <div class="iconimg">
+                                        <img src="img/play.png">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <h4>8. One Of the Boys</h4>
+                                <p>Katy Perry</p>
+                            </td>
+                            <td class="second">
+                                <div class="iconbox">
+                                    <span>3:14</span>
+                                    <div class="iconimg">
+                                        <img src="img/download-file.png" alt="">
+                                    </div>
+                                    <div class="iconimg">
+                                        <img src="img/play.png">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="review">
+                <div class="reviewbox">
+                    <div class="text">
+                        <h4>Spotify On Stage</h4>
+                        <h3>★★★☆☆</h3>
+                        <p>Lorem Ipsum rhis ts toshhoop svetsgin.<br>
+                            Proin gravida nibh lorem proyuva.</p>
+                    </div>
+                    <div class="face_name">
+                        <div class="face"> <img src="img/main-team-img-1.png" alt=""></div>
+                        <span>Lisa Turmov</span>
+                    </div>
+
+                    <div class="review">
+                        <div class="reviewbox">
+                            <div class="text">
+                                <h4>Spotify On Stage</h4>
+                                <h3>★★★☆☆</h3>
+                                <p>Proin gravida nibh lorem rorem psum rhis<br>
+                                    ts toshhoop svetsgin turt ovi.</p>
+                            </div>
+                            <div class="face_name">
+                                <div class="face"> <img src="img/main-team-img-2.png" alt=""></div>
+                                <span>Lisa Turmov</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div id="footer_wrap">
+                <div class="footer_logo">
+                    <img src="../img/Logo.png" alt="">
+                    <p>© 2020 Qode Interactive, All Rights Reserved</p>
+                </div>
+                
+
+                <div class="footer_widget">
+                    <div class="icon">
+                        <img src="img/facebook.png" alt="">
+                    </div>
+                    <div class="icon">
+                        <img src="../img/instagram.png" alt="">
+                    </div>
+                    <div class="icon">
+                        <img src="../img/twitter.png" alt="">
+                    </div>
+                    <div class="icon">
+                        <img src="../img/youtube.png" alt="">
+                    </div>
+                    <div class="icon">
+                        <img src="../img/soundcloud-logotype.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+</body>
+</html>
