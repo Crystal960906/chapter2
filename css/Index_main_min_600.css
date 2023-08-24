@@ -2,6 +2,13 @@
 @media (min-width:600px) {
 * {margin:0; box-sizing: border-box;}
 
+    
+ul,ol,li > a {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;}
+
 /*==================전체 wap==================*/
 #wrap {
     width:100%;
@@ -127,7 +134,7 @@ transform: rotate(360deg);
     background-color: transparent;
 }
 
-.playbox >.box1 > h4 {
+.playbox >.box1 >  a h4  {
     color: #38214a;
     font-size: 18px;
     line-height: 30px;
@@ -135,6 +142,7 @@ transform: rotate(360deg);
     text-decoration: underline;
     text-decoration-color:#c2c0c0;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .playbox >.box2 {

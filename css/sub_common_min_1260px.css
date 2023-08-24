@@ -70,9 +70,9 @@
         display: block;
         background-color: transparent;
         color: white;
+        cursor: pointer;
     }
 
-    #header_wrap>.a ul li a {color: white;}
     
     #header_wrap>.a ul li a:hover {
         cursor: pointer;

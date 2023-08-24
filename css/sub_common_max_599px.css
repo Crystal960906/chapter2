@@ -47,11 +47,12 @@
         position: absolute;
         bottom: -30px;
         display: none;
+        cursor: pointer;
 
 
     }
     
-    #header_wrap>.a ul a {
+    #header_wrap>.a ul  {
         font-size: 15px;
         line-height: 25px;
         font-weight: 600;

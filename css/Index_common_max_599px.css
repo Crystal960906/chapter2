@@ -67,6 +67,11 @@
     width: 100%;
 }
 
+#header_wrap > .a ul li a {
+    text-decoration: none;
+}
+
+
 #header_wrap > .a ul li:hover {
     cursor: pointer;
     color:#5d516c;

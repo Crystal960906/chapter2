@@ -43,7 +43,10 @@ ul,ol,li > a {
 
 #header_wrap > .a ul li {
     padding:  0 30px;
-    
+}
+
+#header_wrap > .a ul li a {
+    text-decoration: none;
 }
 
 #header_wrap > .a ul li:hover {
