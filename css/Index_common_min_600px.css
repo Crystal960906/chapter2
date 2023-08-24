@@ -4,7 +4,8 @@ ul,ol,li > a {
     list-style: none;
     margin: 0;
     padding: 0;
-    text-decoration: none;}
+    text-decoration: none;
+    color: inherit;}
 /*==================헤더==================*/
 
 #header_wrap {
@@ -49,6 +50,7 @@ ul,ol,li > a {
 
 #header_wrap > .a ul li a {
     text-decoration: none;
+    color: inherit;
 }
 
 #header_wrap > .a ul li:hover {
